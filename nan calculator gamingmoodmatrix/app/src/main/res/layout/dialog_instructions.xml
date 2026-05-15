@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How it Works"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is a NaN (Not a Number) calculator. \n\n1. Select two gaming moods or mechanics from the grid.\n2. Press the '=' button.\n3. The calculator will process your combination and output the exact game you should play next."
+        android:textColor="#333333"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnCloseModal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Got it"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ADD THIS ENTIRE BLOCK FOR THE SPLASH SCREEN -->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Background color of the splash screen (A sleek dark grey) -->
+        <item name="windowSplashScreenBackground">#121212</item>
+
+        <!-- The icon that shows in the middle -->
+        <!-- Note: If you made a custom icon in Asset Studio, it's usually called ic_launcher_round -->
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
+
+        <!-- IMPORTANT: This tells the app which theme to load AFTER the splash screen finishes -->
+        <!-- Look at the style name right below this block and make sure it matches exactly! -->
+        <item name="postSplashScreenTheme">@style/Base.Theme.GamingMoodMatrix</item>
+    </style>
+
+    <!-- This is your existing base application theme (Leave this alone!) -->
+    <style name="Base.Theme.GamingMoodMatrix" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- ... existing color items will be here ... -->
+    </style>
+
+</resources>

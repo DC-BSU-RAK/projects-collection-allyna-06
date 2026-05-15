@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#121212">
+
+    <!-- Information Button for Modal -->
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How to Use"
+        android:layout_gravity="end"
+        android:backgroundTint="#333333"
+        android:textColor="#FFFFFF"/>
+
+    <!-- The "Display Screen" of the calculator -->
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:background="#222222"
+        android:gravity="bottom|end"
+        android:padding="16dp"
+        android:text="Select Moods..."
+        android:textColor="#00FFCC"
+        android:textSize="24sp" />
+
+    <!-- The Calculator Grid -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
+
+        <!-- Calculator Buttons -->
+        <Button android:id="@+id/btnAction" android:text="Action" android:layout_width="0dp" android:layout_height="80dp" android:layout_columnWeight="1" android:layout_margin="4dp"/>
+        <Button android:id="@+id/btnStealth" android:text="Stealth" android:layout_width="0dp" android:layout_height="80dp" android:layout_columnWeight="1" android:layout_margin="4dp"/>
+        <Button android:id="@+id/btnOpenWorld" android:text="Open World" android:layout_width="0dp" android:layout_height="80dp" android:layout_columnWeight="1" android:layout_margin="4dp"/>
+        <Button android:id="@+id/btnStory" android:text="Sci-Fi / Story" android:layout_width="0dp" android:layout_height="80dp" android:layout_columnWeight="1" android:layout_margin="4dp"/>
+        <Button android:id="@+id/btnSports" android:text="Sports" android:layout_width="0dp" android:layout_height="80dp" android:layout_columnWeight="1" android:layout_margin="4dp"/>
+        <Button android:id="@+id/btnHardcore" android:text="Hardcore" android:layout_width="0dp" android:layout_height="80dp" android:layout_columnWeight="1" android:layout_margin="4dp"/>
+
+        <Button android:id="@+id/btnClear" android:text="CLEAR" android:layout_width="0dp" android:layout_height="80dp" android:layout_columnWeight="1" android:layout_margin="4dp" android:backgroundTint="#FF4444"/>
+        <Button android:id="@+id/btnEquals" android:text="=" android:layout_width="0dp" android:layout_height="80dp" android:layout_columnWeight="1" android:layout_margin="4dp" android:backgroundTint="#00FFCC" android:textColor="#000000" android:textSize="24sp"/>
+
+    </GridLayout>
+</LinearLayout>
